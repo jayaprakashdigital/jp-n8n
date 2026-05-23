@@ -73,6 +73,19 @@ Thumbs.db
 *_private*
 credentials.json
 
+# Legacy/credential scripts — contain hardcoded secrets, never commit
+scripts/n8n_credential_manager.py
+scripts/n8n_import_telegram_webhook.py
+scripts/n8n_activate_workflows.py
+scripts/n8n_workflow_importer.py
+scripts/init_db.sql
+scripts/log.sh
+workflows/
+backups/
+database/
+config/
+docker-compose.yml
+
 # FFmpeg temp files
 *.ts
 *.part
