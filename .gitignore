@@ -1,0 +1,80 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+
+# Environment — NEVER commit secrets
+.env
+.env.*
+!.env.example
+config/.env
+config/.env.generated
+
+# Build outputs
+dist/
+build/
+*.pyc
+__pycache__/
+*.egg-info/
+.eggs/
+
+# Logs (runtime)
+logs/*.log
+logs/runtime/
+*.log
+
+# Temp and cache
+temp/
+tmp/
+.cache/
+.tmp/
+
+# Database data directory (managed by Docker)
+database/base/
+database/global/
+database/pg_*
+database/PG_VERSION
+database/postmaster.pid
+
+# Backups (large binary files)
+backups/*/n8n_data/
+backups/*/aios_db.sql
+
+# n8n internal data
+.n8n/
+
+# Media render outputs
+renders/*.mp4
+renders/*.jpg
+renders/*.png
+thumbnails/*.jpg
+thumbnails/*.png
+uploads/*
+!uploads/.gitkeep
+
+# Python virtual environments
+venv/
+env/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Secrets and keys (belt and suspenders)
+*.pem
+*.key
+*.cert
+*.p12
+*_secret*
+*_private*
+credentials.json
+
+# FFmpeg temp files
+*.ts
+*.part
+subtitles/*.vtt
+!subtitles/.gitkeep
